@@ -23,7 +23,11 @@
         <header class="site-header">
             <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
                 <div class="container">
-                <a class="navbar-brand mr-3" href="/"><img src="/media/swachhbharat-logo.jpg" style="display: inline-block;"><span style="display: inline-block;">Swachh Bharat Mission</span></a>
+                <a class="navbar-brand mr-3" href="/">
+                    <img
+                        src="https://hacktheearth.ca/images/HtE%202021%20Circuit%20Earth%20Logo.svg"
+                        style="display: inline-block; width: 40px"/><span style="display: inline-block; font-family: 'Colonna MT'" >HACK4EARTH</span>
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,8 +38,9 @@
                     </div>
                     <!-- Navbar Right Side -->
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="{% url 'blog-home' %}">Post</a>
+                        <a class="nav-item nav-link" href="{% url 'blog-post' %}">Posts</a>
                         <a class="nav-item nav-link" href="{% url 'blog-about' %}">Subscribe Us</a>
+                        <a class="nav-item nav-link" href="/admin">Admin</a>
                     </div>
                 </div>
                 </div>
@@ -59,7 +64,7 @@
                     </p>
                 </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8">    
                 {% block content %}{% endblock %}
                 </div>
             </div>

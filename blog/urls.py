@@ -6,8 +6,9 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    path('', PostListView.as_view(), name='blog-home'),
+    path('posts/', PostListView.as_view(), name='blog-post'),
     path('post/<int:pk>/', PostDetailView.as_view(), name='post-detail'),
     path('post/new/', PostCreateView.as_view(), name='post-create'),
     path('about/', views.about, name='blog-about'),
+    path('', views.home, name='blog-home'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

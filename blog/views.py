@@ -7,16 +7,20 @@ from .models import Post
 
 
 
-def home(request):
+def post(request):
     context = {
         'posts': Post.objects.all()
     }
-    return render(request, 'blog/home.html', context)
+    return render(request, 'blog/posts.html', context)
+
+
+def home(request):
+    return render(request, 'blog/home.html')
 
 
 class PostListView(ListView):
     model = Post
-    template_name = 'blog/home.html'
+    template_name = 'blog/posts.html'
     context_object_name = 'posts'
     ordering = ['-date_posted']
 
@@ -27,7 +31,7 @@ class PostDetailView(DetailView):
 
 class PostCreateView(CreateView):
     model = Post
-    fields = ['title', 'content', 'image', 'date_posted', 'author']
+    fields = ['title', 'content', 'image', 'author']
 
 
 
