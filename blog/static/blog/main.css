@@ -1,7 +1,8 @@
-body {
-    background: #fafafa;
-    color: #333333;
-    margin-top: 5rem;
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap");
+.main_page {
+  background: #dffdb2;
+  color: #333333;
+  margin-top: 5rem;
 }
 
 h1,
@@ -10,113 +11,177 @@ h3,
 h4,
 h5,
 h6 {
-    color: #444444;
+  color: #444444;
 }
 
 ul {
-    margin: 0;
+  margin: 0;
 }
 
 .bg-steel {
-    background-color: #5f788a;
+  background-color: #5f788a;
 }
 
 .site-header .navbar-nav .nav-link {
-    color: #cbd5db;
+  color: #cbd5db;
 }
 
 .site-header .navbar-nav .nav-link:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .site-header .navbar-nav .nav-link.active {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .content-section {
-    background: #ffffff;
-    padding: 10px 20px;
-    border: 1px solid #dddddd;
-    border-radius: 3px;
-    margin-bottom: 20px;
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
 }
 
 .article-title {
-    color: #444444;
+  color: #444444;
 }
 
 a.article-title:hover {
-    color: #428bca;
-    text-decoration: none;
+  color: #428bca;
+  text-decoration: none;
 }
 
 .article-content {
-    white-space: pre-line;
+  white-space: pre-line;
 }
 
 .article-img {
-    height: 65px;
-    width: 65px;
-    margin-right: 16px;
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
 }
 
 .article-metadata {
-    padding-bottom: 1px;
-    margin-bottom: 4px;
-    border-bottom: 1px solid #e3e3e3
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3;
 }
 
 .article-metadata a:hover {
-    color: #333;
-    text-decoration: none;
+  color: #333;
+  text-decoration: none;
 }
 
 .article-svg {
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
 }
 
 .account-img {
-    height: 125px;
-    width: 125px;
-    margin-right: 20px;
-    margin-bottom: 16px;
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
 }
 
 .account-heading {
-    font-size: 2.5rem;
-}
-
-
-.crousimg {
-    width: 100vw;
-    height: 89.6vh;
-    opacity: 0.8;
+  font-size: 2.5rem;
 }
 
 .carousel-caption {
-    position: absolute;
-    z-index: 1;
-    display: table;
-    width: 100%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  /* background-color: red; */
+}
+
+.carousel-caption h1 {
+  left: 0;
+  line-height: 200px;
+  margin-top: 100px;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+.carousel-caption h1 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 3px 3px 3px #3cb371, -2px 1px 3px #3cb371;
+  color: #1b4e3b;
+  font-weight: 800;
+  font-family: "Prompt", sans-serif;
+}
+.carousel-caption h1 a:hover {
+  transform: scale(1.1);
+}
+
+#dvImage {
+  height: 50vw;
+  width: 50vw;
+  /* z-index: -1; */
+  opacity: 0.9;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 100%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.base {
+  /* background-color: red; */
+  /* color: yellow; */
+  margin-top: 100px;
+}
+
+.about_heading {
+  /* background-color: red; */
+  font-size: 50px;
+}
+.about_sub {
+  /* background-color: green; */
+  font-size: 30px;
+}
+.about_content {
+  /* background-color: blue; */
+}
+
+@media screen and (max-width: 700px) {
+  .carousel-caption {
     height: 100%;
-}
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+  }
+  .carousel-caption h1 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    margin-top: -50px;
+    text-shadow: 3px 3px 3px #3cb371, -2px 1px 3px #3cb371;
+    color: #1b4e3b;
+    font-weight: 600;
+    font-family: "Prompt", sans-serif;
+  }
 
-.absolute-div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  #dvImage {
+    height: 90vw;
+    width: 90vw;
+    z-index: 10;
+    opacity: 0.6;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50%;
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
-
-.carousel-caption h3 {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
-h1.a{
-    color:red;
-}
-

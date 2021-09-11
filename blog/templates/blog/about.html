@@ -1,5 +1,58 @@
-{% extends "blog/base.html" %}
-
-{%block content %}
-        <h1>About Page</h1>
+{% extends "blog/base2.html" %} {%block content %}
+<h1 class="about_heading">About</h1>
+<br />
+<div class="container">
+  <div class="row">
+    <h2 class="about_sub">
+      <a
+        href="{% url 'blog-home' %}"
+        style="color: #444444; text-decoration: none"
+        >HACK FOR EARTH</a
+      >
+    </h2>
+    <p class="about_content">
+      Hack for Earth is a one week long Hackathon initiative by Programming Club
+      of Indian Institute Of Information Technology Guwahati(IIITG) under
+      Swachhata Pakhwada, a 15 day long cleanliness drive under the Swachh
+      Bharat Abhiyan by the Gov. of India.
+    </p>
+  </div>
+  <div class="row">
+    <h2 class="about_sub">
+      <a
+        href="http://swachhbharatmission.gov.in/SBMCMS/swachhta-pakhwada.htm"
+        target="_blank"
+        style="text-decoration: none; color: #444444"
+      >
+        SWACHTA PAKHWADA
+      </a>
+    </h2>
+    <p class="about_content">
+      Swachhata Pakhwada started in April 2016 with the objective of bringing a
+      fortnight of intense focus on the issues and practices of Swachhata by
+      engaging GOI Ministries/Departments in their jurisdictions.The Ministries
+      observing Swachhata Pakhwada are monitored closely using online monitoring
+      system of Swachhata Samiksha where action plans, images, videos related to
+      Swachhata activities are uploaded and shared.
+    </p>
+  </div>
+  <div class="row">
+    <h2 class="about_sub">
+      <a
+        href="{% url 'blog-about' %}"
+        style="color: #444444; text-decoration: none"
+        >ABOUT US</a
+      >
+    </h2>
+    <p class="about_content">
+      Hack4Earth is a website Created as a part of the project for the hack for
+      earth Hackathon by two of the Students of IIIT-G <br />
+      Team Name : Bella_Ciao <br />
+      Member 1: Gaurav Gupta (gaurav.gupta@iiitg.ac.in) <br />
+      Member 2: Abhinandan Kumar (abhinandan.kumar@iiitg.ac.in) <br />
+      <br />
+      Contact us at swachh.bharat404@gmail.com
+    </p>
+  </div>
+</div>
 {% endblock content %}

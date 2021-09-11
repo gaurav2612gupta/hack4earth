@@ -51,19 +51,7 @@
 
         <main role="main" class="container base">
             <div class="row">
-                <div class="col-md-4">
-                <div class="content-section">
-                    <h1>HACK FOR EARTH</h1>
-                    <p class='text-muted'>Hack for Earth is a one week long Hackathon initiative by Programming Club of Indian Institute Of Information Technology Guwahati(IIITG) under Swachhata Pakhwada, a 15 day long cleanliness drive under the Swachh Bharat Abhiyan by the Gov. of India.
-                        <ul class="list-group">
-                        <li class="list-group-item list-group-item-light"><a href="{% url 'blog-about' %}" class="link-primary">Join with us</a></li>
-                        <li class="list-group-item list-group-item-light"><a href="{% url 'post-create' %}" class="link-primary">Create new post</a></li>
-                        <li class="list-group-item list-group-item-light"><a href="{% url 'blog-post' %}" class="link-primary">See All Posts</a></li>
-                        </ul>
-                    </p>
-                </div>
-                </div>
-                <div class="col-md-8">    
+                <div class="col-md-10">    
                 {% block content %}{% endblock %}
                 </div>
             </div>
