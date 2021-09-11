@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 .main_page {
   background: #dffdb2;
   color: #333333;
@@ -21,6 +22,18 @@ ul {
 .bg-steel {
   background-color: #5f788a;
 }
+
+.main_heading{
+    /* background-color: red; */
+    text-align: center;
+}
+.main_heading h1{
+    /* background-color: blue; */
+    font-size: 50px;
+    font-family: 'Patrick Hand', cursive;
+    color: #2570b3;
+}
+
 
 .site-header .navbar-nav .nav-link {
   color: #cbd5db;
@@ -125,8 +138,9 @@ a.article-title:hover {
 #dvImage {
   height: 50vw;
   width: 50vw;
+  margin-top: -100px;
   /* z-index: -1; */
-  opacity: 0.9;
+  opacity: 0.7;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -164,7 +178,7 @@ a.article-title:hover {
     text-decoration: none;
     color: #fff;
     font-size: 35px;
-    margin-top: -50px;
+    margin-top: 0px;
     text-shadow: 3px 3px 3px #3cb371, -2px 1px 3px #3cb371;
     color: #1b4e3b;
     font-weight: 600;
@@ -175,13 +189,17 @@ a.article-title:hover {
     height: 90vw;
     width: 90vw;
     z-index: 10;
-    opacity: 0.6;
+    opacity: 0.7;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50%;
+    margin-top: 17%;
     /* width: 100%; */
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .main_heading h1{
+    /* background-color: blue; */
+    font-size: 30px;
+}
 }

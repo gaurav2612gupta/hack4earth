@@ -23,9 +23,9 @@
       href="{% static 'blog/main.css' %}"
     />
     {%if title%}
-    <title>Django Blog - {{title}}</title>
+    <title>Hack4Earth - {{title}}</title>
     {% else %}
-    <title>Django Blog</title>
+    <title>Hack4Earth</title>
     {%endif%}
   </head>
 
@@ -73,6 +73,11 @@
         </div>
       </nav>
     </header>
+
+    <div class="main_heading">
+        <h1>Share your Ideas and thoughts this Swachhata Season</h1>
+    </div>
+
     <main role="main" class="container-fluid">
       <div id="demo" class="carousel slide" data-ride="carousel">
       
@@ -80,12 +85,12 @@
           <div class="carousel-caption">
             <h1>
               <a class="nav-item nav-link first" href="{% url 'post-create' %}"
-                >Share Your Thoughts</a
+                >Write Something...</a
               >
             </h1>
             <h1>
               <a class="nav-item nav-link second" href="{% url 'blog-post' %}"
-                >See Other's Thoughts </a
+                >See Recent Posts</a
               >
             </h1>
           </div>
@@ -128,7 +133,7 @@
                     $(this).css("background-image", "url(/media/" + images[i] + ")");
                     $(this).fadeIn("slow");
                 });
-            }, 2000);
+            }, 3000);
         });
     </script>
 
